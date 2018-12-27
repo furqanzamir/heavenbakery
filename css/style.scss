@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700');
+*,body{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: #f6efe9;
+}
+@font-face {
+    font-family: 'delius_swash_capsregular';
+    src: url('../fonts/deliusswashcaps-regular.woff2') format('woff2'),
+         url('../fonts/deliusswashcaps-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hamillton_demoregular';
+    src: url('../fonts/hamillton_demo.woff2') format('woff2'),
+         url('../fonts/hamillton_demo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'keep_calm_medregular';
+    src: url('../fonts/keepcalm-medium.woff2') format('woff2'),
+         url('../fonts/keepcalm-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold.woff2') format('woff2'),
+         url('../fonts/quicksand-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand_lightregular';
+    src: url('../fonts/quicksand-light.woff2') format('woff2'),
+         url('../fonts/quicksand-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand_mediumregular';
+    src: url('../fonts/quicksand-medium.woff2') format('woff2'),
+         url('../fonts/quicksand-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular.woff2') format('woff2'),
+         url('../fonts/quicksand-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*========== Home Page Manu ==============*/
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+$color-background: #F5F5F5;
+$color-main: #000000;
+$color-active: #FFF;
+$color-link: #FFF;
+$button-height: 27px;
+$button-width: 35px;
+$base-fontweght: 300;
+$base-fontsize: 14px;
+$prim-color: #cd804c;
+header{
+    position: relative;
+    height: 150px;
+    background-color: #fff;
+    padding: 30px 0px;
+    color: #000;
+    .menutxt {
+            display: inline-block;
+            vertical-align: super;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-left: 10px;
+            font-weight: $base-fontweght + 200;
+        }
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+       transform: translate(-50%, -50%);
+    } 
+    .mainmenu{
+        float: right;        
+    }
+    .heaven-menu{
+        ul{
+            padding: 0px;
+            text-align: right;
+            li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                    color: #000;
+                    font-size: $base-fontsize + 2px;
+                    font-weight: $base-fontweght + 200;
+                }
+            }
+        }
+    }   
+}
+
+
+.button_container {
+  position: relative;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+  transition: opacity .25s ease;
+  
+  &:hover {
+    opacity: .7;
+  }
+  
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $color-active;
+    }
+    .middle {
+      opacity: 0;
+      background: $color-active;
+    }
+    
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $color-active;
+    }
+  }
+  
+  span {
+  background: $color-main;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:  all .35s ease;
+  cursor: pointer;
+    
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+    
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  background: #adbfe2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  .prim-head{
+        color: $prim-color;
+        font-size: $base-fontsize + 4px;
+        font-family: 'keep_calm_medregular';
+    }
+    .prim-subhead{
+        color: #000;
+        font-size: $base-fontsize + 4px;
+        font-family: 'quicksand_mediumregular';
+        margin-bottom: 20px;
+    }
+  .heaven-sociallink{
+    ul{
+        padding: 0px;
+        li{
+            list-style: none;
+            display: inline-block;
+            margin: 0px 15px;
+            min-height: 0px;
+            height: 0px;
+            a{
+                text-align: center;
+                font-size: $base-fontsize + 2px;
+                font-family: 'quicksandbold';
+            }
+        }
+    }
+    p{
+        text-align: center;
+         font-family: 'quicksand_mediumregular';
+        font-size: $base-fontsize + 2px;
+    }
+  }
+  &.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+    
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+      
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 38%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 5);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+      
+      a {
+        display: block;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: 'quicksand_mediumregular';
+        &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-link;
+          transition: .35s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+/*=============== Slider ==============*/
+.heaven-slider{
+    position: relative;
+    .pagearrow{
+        position: absolute;
+        top: 90%;
+        left: 50%; 
+       transform: translate(-50%, -50%);
+       z-index: 10;
+       color: #fff;
+       i{
+        font-size: $base-fontsize + 40px;
+       }
+    }
+    .owl-theme{
+            .owl-dots{
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                z-index: 100;
+                .owl-dot.active{
+                    span{
+                        background-color: $prim-color;
+                    }
+                }
+                .owl-dot:hover{
+                    span{
+                        background-color: $prim-color;
+                    }
+                }
+                .owl-dot{
+                    span{
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }      
+        }  
+   
+}
+
+.heaven-bakery-section{
+    text-align: center;    
+    padding-top: 60px;
+    h3{
+        color: $prim-color;
+        font-size: $base-fontsize + 4px;
+        font-family: 'quicksand_mediumregular';
+    }
+    h2{
+        font-size: $base-fontsize + 30px;
+        color: #000;
+        font-family: 'delius_swash_capsregular';
+    }
+    .btnprim{
+        background-color: #fff;
+        color: #000;
+        font-family: 'keep_calm_medregular';
+        margin: 10px 0px;
+        padding: .575rem 1rem;
+        font-size: $base-fontsize + 4px;
+    }
+    .imgtb50{
+        margin: 25px auto;
+    }
+}
