@@ -82,7 +82,7 @@ header{
     .menutxt {
             display: inline-block;
             vertical-align: super;
-            font-size: 16px;
+            font-size: $base-fontsize + 1px;
             text-transform: uppercase;
             margin-left: 10px;
             font-weight: $base-fontweght + 200;
@@ -106,7 +106,7 @@ header{
                 margin-left: 15px;
                 a{
                     color: #000;
-                    font-size: $base-fontsize + 2px;
+                    font-size: $base-fontsize + 1px;
                     font-weight: $base-fontweght + 200;
                 }
             }
@@ -147,7 +147,7 @@ header{
   span {
   background: $color-main;
   border: none;
-  height: 5px;
+  height: 3px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -179,12 +179,12 @@ header{
   overflow: hidden;
   .prim-head{
         color: $prim-color;
-        font-size: $base-fontsize + 4px;
+        font-size: $base-fontsize + 2px;
         font-family: 'keep_calm_medregular';
     }
     .prim-subhead{
         color: #000;
-        font-size: $base-fontsize + 4px;
+        font-size: $base-fontsize + 2px;
         font-family: 'quicksand_mediumregular';
         margin-bottom: 20px;
     }
@@ -199,7 +199,7 @@ header{
             height: 0px;
             a{
                 text-align: center;
-                font-size: $base-fontsize + 2px;
+                font-size: $base-fontsize + 1px;
                 font-family: 'quicksandbold';
             }
         }
@@ -207,7 +207,7 @@ header{
     p{
         text-align: center;
          font-family: 'quicksand_mediumregular';
-        font-size: $base-fontsize + 2px;
+        font-size: $base-fontsize + 1px;
     }
   }
   &.open {
@@ -235,7 +235,7 @@ header{
     height: 70%;
     top: 38%;
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 400;
     text-align: center;
   }
@@ -342,11 +342,11 @@ header{
     padding-top: 60px;
     h3{
         color: $prim-color;
-        font-size: $base-fontsize + 4px;
+        font-size: $base-fontsize + 2px;
         font-family: 'quicksand_mediumregular';
     }
     h2{
-        font-size: $base-fontsize + 26px;
+        font-size: $base-fontsize + 22px;
         color: #000;
         font-family: 'delius_swash_capsregular';
     }
@@ -356,7 +356,7 @@ header{
         font-family: 'keep_calm_medregular';
         margin: 10px 0px;
         padding: .575rem 1rem;
-        font-size: $base-fontsize + 4px;
+        font-size: $base-fontsize + 2px;
     }
     .imgtb50{
         margin: 25px auto;
@@ -366,28 +366,121 @@ header{
         h4{
             color: #385f2d;
             letter-spacing: 5px;
-            font-size: $base-fontsize + 4px;
+            font-size: $base-fontsize + 2px;
             
         }
         h1{
             color: #000;
             font-family: 'hamillton_demoregular';
-            font-size: $base-fontsize + 56px;
+            font-size: $base-fontsize + 50px;
             margin: 20px 0px;
         }
         h5{
-            font-size: $base-fontsize + 2px;
+            font-size: $base-fontsize + 1px;
+            font-family: 'keep_calm_medregular';
+            color: #385f2d;
+        }
+        h3{
+            font-size: $base-fontsize + 1px;
             font-family: 'keep_calm_medregular';
             color: #385f2d;
         }
         p{
-            font-size: $base-fontsize + 6px;
+            font-size: $base-fontsize + 4px;
         }
     }
 }
 .getintouch{
     background-color: #f2d9c9;
     padding: 80px 0px;
+}
+.aboutus{
+  padding: 30px 0px;
+  img{
+    margin-bottom: 30px;
+  }
+  h4,p{
+    text-align: left;
+  }
+  .aboutinner-content{
+    p{
+      margin-bottom: 40px;
+      line-height: 38px;
+    }
+  }
+  .bottom-align{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    padding: 15px 15px 0px 15px;
+  }
+}
+.heaven-philosophy{
+  p{
+    margin: 25px 0px;
+    line-height: 30px;
+  }
+}
+.contactus{
+  padding: 60px 0px;
+  .contact-form{
+    .row{
+      margin: 25px 0px;
+    }
+    background-color: #fff;
+    padding: 30px;
+    input{
+      background-color: #f3f4f5;
+      border: 0px;
+      padding: 8px 2px;
+      width: 100%;
+      text-indent: 15px;
+      font-size: $base-fontsize + 4px;
+      font-family: 'quicksandregular';
+    }
+    label{
+      font-size: $base-fontsize + 4px;
+      font-family: 'quicksand_mediumregular';
+      color: #000; 
+    }
+    textarea{
+      min-height: 150px;
+      background-color: #f3f4f5 ;
+      border: 0px;
+      text-indent: 15px;
+      padding: 8px 2px;
+      width: 100%;
+    }
+    .btnsubmit{
+      padding: 8px 2px;
+      border: 0px;
+      text-align: center;
+      display: inline-block;
+      background-color: #cd804c;
+      color: #fff;
+      width: 45%;
+      text-indent: 0px;
+    }
+    .flname{
+
+      input{
+        display: inline-block;
+        width: 48%;
+        &:last-child{
+          float: right;
+        };
+      }
+    }
+  }
+  .out-details{
+    background-color: #cd804c;
+    padding: 20px;
+  }
+}
+/*========== Standard Classes ===========*/
+.padtb30{
+  padding: 30px 0px;
 }
 footer{
     padding: 15px 0px;

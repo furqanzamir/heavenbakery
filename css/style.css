@@ -51,7 +51,7 @@ header {
   header .menutxt {
     display: inline-block;
     vertical-align: super;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     margin-left: 10px;
     font-weight: 500; }
@@ -71,7 +71,7 @@ header {
       margin-left: 15px; }
       header .heaven-menu ul li a {
         color: #000;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500; }
 
 .button_container {
@@ -96,7 +96,7 @@ header {
   .button_container span {
     background: #000000;
     border: none;
-    height: 5px;
+    height: 3px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -122,11 +122,11 @@ header {
   overflow: hidden; }
   .overlay .prim-head {
     color: #cd804c;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'keep_calm_medregular'; }
   .overlay .prim-subhead {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'quicksand_mediumregular';
     margin-bottom: 20px; }
   .overlay .heaven-sociallink ul {
@@ -139,12 +139,12 @@ header {
       height: 0px; }
       .overlay .heaven-sociallink ul li a {
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
         font-family: 'quicksandbold'; }
   .overlay .heaven-sociallink p {
     text-align: center;
     font-family: 'quicksand_mediumregular';
-    font-size: 16px; }
+    font-size: 15px; }
   .overlay.open {
     opacity: .9;
     visibility: visible;
@@ -163,7 +163,7 @@ header {
     height: 70%;
     top: 38%;
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 400;
     text-align: center; }
   .overlay ul {
@@ -238,10 +238,10 @@ header {
   padding-top: 60px; }
   .heaven-bakery-section h3 {
     color: #cd804c;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'quicksand_mediumregular'; }
   .heaven-bakery-section h2 {
-    font-size: 40px;
+    font-size: 36px;
     color: #000;
     font-family: 'delius_swash_capsregular'; }
   .heaven-bakery-section .btnprim {
@@ -250,7 +250,7 @@ header {
     font-family: 'keep_calm_medregular';
     margin: 10px 0px;
     padding: .575rem 1rem;
-    font-size: 18px; }
+    font-size: 16px; }
   .heaven-bakery-section .imgtb50 {
     margin: 25px auto; }
   .heaven-bakery-section .american-biscotta {
@@ -258,22 +258,94 @@ header {
     .heaven-bakery-section .american-biscotta h4 {
       color: #385f2d;
       letter-spacing: 5px;
-      font-size: 18px; }
+      font-size: 16px; }
     .heaven-bakery-section .american-biscotta h1 {
       color: #000;
       font-family: 'hamillton_demoregular';
-      font-size: 70px;
+      font-size: 64px;
       margin: 20px 0px; }
     .heaven-bakery-section .american-biscotta h5 {
-      font-size: 16px;
+      font-size: 15px;
+      font-family: 'keep_calm_medregular';
+      color: #385f2d; }
+    .heaven-bakery-section .american-biscotta h3 {
+      font-size: 15px;
       font-family: 'keep_calm_medregular';
       color: #385f2d; }
     .heaven-bakery-section .american-biscotta p {
-      font-size: 20px; }
+      font-size: 18px; }
 
 .getintouch {
   background-color: #f2d9c9;
   padding: 80px 0px; }
+
+.aboutus {
+  padding: 30px 0px; }
+  .aboutus img {
+    margin-bottom: 30px; }
+  .aboutus h4, .aboutus p {
+    text-align: left; }
+  .aboutus .aboutinner-content p {
+    margin-bottom: 40px;
+    line-height: 38px; }
+  .aboutus .bottom-align {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    padding: 15px 15px 0px 15px; }
+
+.heaven-philosophy p {
+  margin: 25px 0px;
+  line-height: 30px; }
+
+.contactus {
+  padding: 60px 0px; }
+  .contactus .contact-form {
+    background-color: #fff;
+    padding: 30px; }
+    .contactus .contact-form .row {
+      margin: 25px 0px; }
+    .contactus .contact-form input {
+      background-color: #f3f4f5;
+      border: 0px;
+      padding: 8px 2px;
+      width: 100%;
+      text-indent: 15px;
+      font-size: 18px;
+      font-family: 'quicksandregular'; }
+    .contactus .contact-form label {
+      font-size: 18px;
+      font-family: 'quicksand_mediumregular';
+      color: #000; }
+    .contactus .contact-form textarea {
+      min-height: 150px;
+      background-color: #f3f4f5;
+      border: 0px;
+      text-indent: 15px;
+      padding: 8px 2px;
+      width: 100%; }
+    .contactus .contact-form .btnsubmit {
+      padding: 8px 2px;
+      border: 0px;
+      text-align: center;
+      display: inline-block;
+      background-color: #cd804c;
+      color: #fff;
+      width: 45%;
+      text-indent: 0px; }
+    .contactus .contact-form .flname input {
+      display: inline-block;
+      width: 48%; }
+      .contactus .contact-form .flname input:last-child {
+        float: right; }
+  .contactus .out-details {
+    background-color: #cd804c;
+    padding: 20px; }
+
+/*========== Standard Classes ===========*/
+.padtb30 {
+  padding: 30px 0px; }
 
 footer {
   padding: 15px 0px; }
