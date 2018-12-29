@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="american-biscotta imgtb60">
+        <div class="american-biscotta imgtb60 american-trycookies">
           <div class="row align-items-center h-100">      
             <div class="col-lg-6 col-sm-6">
               <h4>. DINE IN DEAL .</h4>
@@ -29,7 +29,7 @@
                <h5>$30 - Available from 9am -  9pm</h5>
             </div>
             <div class="col-lg-6 col-sm-6">
-              <img src="images/heaven-biscatto.png" class="img-fluid">
+              <img src="images/heaven-cookies.jpg" class="img-fluid">
             </div>
           </div>
         </div>

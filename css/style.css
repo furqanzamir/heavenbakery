@@ -41,6 +41,11 @@ body {
   src: url("../fonts/quicksand-regular.woff2") format("woff2"), url("../fonts/quicksand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Angelface';
+  src: url("../fonts/Angelface.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
 /*========== Home Page Manu ==============*/
 header {
   position: relative;
@@ -276,6 +281,9 @@ header {
       font-size: 18px; }
   .heaven-bakery-section .american-trycookies {
     background-color: #fcd5c2; }
+    .heaven-bakery-section .american-trycookies h1 {
+      font-family: 'Angelface';
+      line-height: 50px; }
 
 .getintouch {
   background-color: #f2d9c9;

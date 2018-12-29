@@ -60,7 +60,12 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+  font-family: 'Angelface';
+  src: url('../fonts/Angelface.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 /*========== Home Page Manu ==============*/
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 
@@ -392,6 +397,10 @@ header{
     }
     .american-trycookies{
         background-color: #fcd5c2;
+        h1{
+          font-family: 'Angelface';
+          line-height: 50px;
+        }
     }
 }
 .getintouch{
