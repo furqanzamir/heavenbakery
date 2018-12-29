@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700");
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+*, body {
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  background-color: #f6efe9; }
+
+@font-face {
+  font-family: 'delius_swash_capsregular';
+  src: url("../fonts/deliusswashcaps-regular.woff2") format("woff2"), url("../fonts/deliusswashcaps-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'hamillton_demoregular';
+  src: url("../fonts/hamillton_demo.woff2") format("woff2"), url("../fonts/hamillton_demo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'keep_calm_medregular';
+  src: url("../fonts/keepcalm-medium.woff2") format("woff2"), url("../fonts/keepcalm-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandbold';
+  src: url("../fonts/quicksand-bold.woff2") format("woff2"), url("../fonts/quicksand-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksand_lightregular';
+  src: url("../fonts/quicksand-light.woff2") format("woff2"), url("../fonts/quicksand-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksand_mediumregular';
+  src: url("../fonts/quicksand-medium.woff2") format("woff2"), url("../fonts/quicksand-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandregular';
+  src: url("../fonts/quicksand-regular.woff2") format("woff2"), url("../fonts/quicksand-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Angelface';
+  src: url("../fonts/Angelface.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+/*========== Home Page Manu ==============*/
+header {
+  position: relative;
+  height: 150px;
+  background-color: #fff;
+  padding: 30px 0px;
+  color: #000; }
+  header .menutxt {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: 500; }
+  header .custom-logo-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  header .mainmenu {
+    float: right; }
+  header .heaven-menu ul {
+    padding: 0px;
+    text-align: right; }
+    header .heaven-menu ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 15px; }
+      header .heaven-menu ul li a {
+        color: #000;
+        font-size: 15px;
+        font-weight: 500; }
+
+.button_container {
+  position: relative;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+  transition: opacity .25s ease; }
+  .button_container:hover {
+    opacity: .7; }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF; }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #FFF; }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF; }
+  .button_container span {
+    background: #000000;
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+    .button_container span:nth-of-type(2) {
+      top: 11px; }
+    .button_container span:nth-of-type(3) {
+      top: 22px; }
+
+.overlay {
+  position: fixed;
+  background: #adbfe2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
+  .overlay .prim-head {
+    color: #cd804c;
+    font-size: 16px;
+    font-family: 'keep_calm_medregular'; }
+  .overlay .prim-subhead {
+    color: #000;
+    font-size: 16px;
+    font-family: 'quicksand_mediumregular';
+    margin-bottom: 20px; }
+  .overlay .heaven-sociallink ul {
+    padding: 0px; }
+    .overlay .heaven-sociallink ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 15px;
+      min-height: 0px;
+      height: 0px; }
+      .overlay .heaven-sociallink ul li a {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'quicksandbold'; }
+  .overlay .heaven-sociallink p {
+    text-align: center;
+    font-family: 'quicksand_mediumregular';
+    font-size: 15px; }
+  .overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%; }
+    .overlay.open li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s; }
+      .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s; }
+      .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s; }
+      .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s; }
+  .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 38%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center; }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative; }
+    .overlay ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 5);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: 'quicksand_mediumregular'; }
+        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+          width: 100%; }
+        .overlay ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #FFF;
+          transition: .35s; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+/*=============== Slider ==============*/
+.heaven-slider {
+  position: relative; }
+  .heaven-slider .pagearrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #fff; }
+    .heaven-slider .pagearrow i {
+      font-size: 54px; }
+  .heaven-slider .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100; }
+    .heaven-slider .owl-theme .owl-dots .owl-dot.active span {
+      background-color: #cd804c; }
+    .heaven-slider .owl-theme .owl-dots .owl-dot:hover span {
+      background-color: #cd804c; }
+    .heaven-slider .owl-theme .owl-dots .owl-dot span {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      width: 16px;
+      height: 16px; }
+
+.heaven-bakery-section {
+  text-align: center;
+  padding-top: 60px; }
+  .heaven-bakery-section h3 {
+    color: #cd804c;
+    font-size: 16px;
+    font-family: 'quicksand_mediumregular'; }
+  .heaven-bakery-section h2 {
+    font-size: 36px;
+    color: #000;
+    font-family: 'delius_swash_capsregular'; }
+  .heaven-bakery-section .btnprim {
+    background-color: #fff;
+    color: #000;
+    font-family: 'keep_calm_medregular';
+    margin: 10px 0px;
+    padding: .575rem 1rem;
+    font-size: 16px; }
+  .heaven-bakery-section .imgtb50 {
+    margin: 25px auto; }
+  .heaven-bakery-section .american-biscotta {
+    background-color: #fff0c0; }
+    .heaven-bakery-section .american-biscotta h4 {
+      color: #385f2d;
+      letter-spacing: 5px;
+      font-size: 16px; }
+    .heaven-bakery-section .american-biscotta h1 {
+      color: #000;
+      font-family: 'hamillton_demoregular';
+      font-size: 64px;
+      margin: 20px 0px; }
+    .heaven-bakery-section .american-biscotta h5 {
+      font-size: 15px;
+      font-family: 'keep_calm_medregular';
+      color: #385f2d; }
+    .heaven-bakery-section .american-biscotta h3 {
+      font-size: 15px;
+      font-family: 'keep_calm_medregular';
+      color: #385f2d; }
+    .heaven-bakery-section .american-biscotta p {
+      font-size: 18px; }
+  .heaven-bakery-section .american-trycookies {
+    background-color: #fcd5c2; }
+    .heaven-bakery-section .american-trycookies h1 {
+      font-family: 'Angelface';
+      line-height: 50px; }
+
+.getintouch {
+  background-color: #f2d9c9;
+  padding: 80px 0px; }
+
+.aboutus {
+  padding: 30px 0px; }
+  .aboutus img {
+    margin-bottom: 30px; }
+  .aboutus h4, .aboutus p {
+    text-align: left; }
+  .aboutus .aboutinner-content p {
+    margin-bottom: 40px;
+    line-height: 38px; }
+  .aboutus .bottom-align {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    padding: 15px 15px 0px 15px; }
+
+.heaven-philosophy p {
+  margin: 25px 0px;
+  line-height: 30px; }
+
+.contactus {
+  padding: 60px 0px; }
+  .contactus .contact-form {
+    background-color: #fff;
+    padding: 30px; }
+    .contactus .contact-form .row {
+      margin: 25px 0px; }
+    .contactus .contact-form input {
+      background-color: #f3f4f5;
+      border: 0px;
+      padding: 8px 2px;
+      width: 100%;
+      text-indent: 15px;
+      font-size: 18px;
+      font-family: 'quicksandregular'; }
+    .contactus .contact-form label {
+      font-size: 18px;
+      font-family: 'quicksand_mediumregular';
+      color: #000; }
+    .contactus .contact-form textarea {
+      min-height: 150px;
+      background-color: #f3f4f5;
+      border: 0px;
+      text-indent: 15px;
+      padding: 8px 2px;
+      width: 100%; }
+    .contactus .contact-form .btnsubmit {
+      padding: 8px 2px;
+      border: 0px;
+      text-align: center;
+      display: inline-block;
+      background-color: #cd804c;
+      color: #fff;
+      width: 45%;
+      text-indent: 0px; }
+    .contactus .contact-form .flname input {
+      display: inline-block;
+      width: 48%; }
+      .contactus .contact-form .flname input:last-child {
+        float: right; }
+  .contactus .out-details {
+    background-color: #cd804c;
+    padding: 30px;
+    color: #fff; }
+    .contactus .out-details .dt-bd {
+      height: 1px;
+      background-color: #fff;
+      width: 100%;
+      margin: 20px 0px; }
+    .contactus .out-details p {
+      font-size: 15px;
+      font-family: 'quicksand_lightregular'; }
+    .contactus .out-details h3 {
+      font-family: 'quicksand_mediumregular'; }
+
+/*========== Standard Classes ===========*/
+.padtb30 {
+  padding: 30px 0px; }
+
+.imgtb60 {
+  margin: 60px 0px; }
+
+footer {
+  padding: 15px 0px;
+  background-color: #fff; }
+  footer .footer-link ul {
+    padding: 0px;
+    margin: 0px; }
+    footer .footer-link ul li {
+      list-style: none;
+      display: inline-block; }
+      footer .footer-link ul li a {
+        font-size: 14px;
+        color: #000;
+        margin-right: 10px; }
+  footer .footer-socail-link ul {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block; }
+    footer .footer-socail-link ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 5px; }
+      footer .footer-socail-link ul li a {
+        color: #000;
+        font-size: 14px; }
+      footer .footer-socail-link ul li p {
+        font-size: 14px;
+        margin: 0px; }
+        footer .footer-socail-link ul li p a {
+          color: #cd804c; }
+
+/*# sourceMappingURL=style.css.map */
