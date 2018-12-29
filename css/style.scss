@@ -361,6 +361,7 @@ header{
     .imgtb50{
         margin: 25px auto;
     }
+    
     .american-biscotta{
         background-color: #fff0c0;
         h4{
@@ -388,6 +389,9 @@ header{
         p{
             font-size: $base-fontsize + 4px;
         }
+    }
+    .american-trycookies{
+        background-color: #fcd5c2;
     }
 }
 .getintouch{
@@ -475,15 +479,33 @@ header{
   }
   .out-details{
     background-color: #cd804c;
-    padding: 20px;
+    padding: 30px;
+    color: #fff;
+    .dt-bd{
+      height: 1px;
+      background-color: #fff;
+      width: 100%;
+      margin: 20px 0px; 
+    }
+    p{
+      font-size: $base-fontsize + 1px;
+      font-family: 'quicksand_lightregular';
+    }
+    h3{
+      font-family: 'quicksand_mediumregular';
+    }
   }
 }
 /*========== Standard Classes ===========*/
 .padtb30{
   padding: 30px 0px;
 }
+.imgtb60{
+  margin: 60px 0px;
+}
 footer{
     padding: 15px 0px;
+    background-color: #fff;
     .footer-link{
         ul{
             padding: 0px;
@@ -511,9 +533,9 @@ footer{
                     color: #000;
                     font-size: $base-fontsize;
                 }
-                p{
-                  
+                p{                  
                   font-size: $base-fontsize;
+                  margin: 0px;
                   a{
                     color: $prim-color;
                   }
