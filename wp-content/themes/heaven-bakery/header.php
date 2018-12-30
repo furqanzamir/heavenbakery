@@ -66,17 +66,30 @@
         <li><a href="#">CONTACT</a></li>
       </ul> -->
       <div class="heaven-sociallink">
-        <ul>
-          <li><a href="#">FACEBOOK</a></li>
-          <li><a href="#">INSTAGRAM</a></li>
-          <li><a href="#">PINTREST</a></li>
-        </ul>
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'sociallink',
+            'container'       => false,
+            
+          ) );
+        ?>
         <p>COPYRIGHT © 2016 LEVAIN BAKERY. ALL RIGHTS RESERVED.</p>
       </div>
     </nav>
   </div>
 
-	
+	<?php if(is_page('home')){ ?>
+    <div class="heaven-slider">
+      <div class="owl-carousel owl-theme">
+          <div class="item"><img src="http://localhost/heavenbakery/wp-content/themes/heaven-bakery/images/heaven-slider.png" class="img-fluid"></div>
+          <div class="item"><img src="http://localhost/heavenbakery/wp-content/themes/heaven-bakery/images/heaven-slider.png" class="img-fluid"></div>
+          <div class="item"><img src="http://localhost/heavenbakery/wp-content/themes/heaven-bakery/images/heaven-slider.png" class="img-fluid"></div>
+          <div class="item"><img src="http://localhost/heavenbakery/wp-content/themes/heaven-bakery/images/heaven-slider.png" class="img-fluid"></div>
+      </div>
+      <a href="#" class="pagearrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+
+  <?php } ?>
 		
 			
 	<div id="content" class="site-content">

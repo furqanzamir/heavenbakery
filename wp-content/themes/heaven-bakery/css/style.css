@@ -8,42 +8,42 @@ body {
 
 @font-face {
   font-family: 'delius_swash_capsregular';
-  src: url("../fonts/deliusswashcaps-regular.woff2") format("woff2"), url("../fonts/deliusswashcaps-regular.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/deliusswashcaps-regular.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/deliusswashcaps-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'hamillton_demoregular';
-  src: url("../fonts/hamillton_demo.woff2") format("woff2"), url("../fonts/hamillton_demo.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/hamillton_demo.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/hamillton_demo.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'keep_calm_medregular';
-  src: url("../fonts/keepcalm-medium.woff2") format("woff2"), url("../fonts/keepcalm-medium.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/keepcalm-medium.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/keepcalm-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'quicksandbold';
-  src: url("../fonts/quicksand-bold.woff2") format("woff2"), url("../fonts/quicksand-bold.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-bold.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'quicksand_lightregular';
-  src: url("../fonts/quicksand-light.woff2") format("woff2"), url("../fonts/quicksand-light.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-light.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-light.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'quicksand_mediumregular';
-  src: url("../fonts/quicksand-medium.woff2") format("woff2"), url("../fonts/quicksand-medium.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-medium.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'quicksandregular';
-  src: url("../fonts/quicksand-regular.woff2") format("woff2"), url("../fonts/quicksand-regular.woff") format("woff");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-regular.woff2") format("woff2"), url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/quicksand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Angelface';
-  src: url("../fonts/Angelface.eot") format("embedded-opentype");
+  src: url("http://localhost/heavenbakery/wp-content/themes/heaven-bakery/fonts/Angelface.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 /*========== Home Page Manu ==============*/
@@ -344,11 +344,11 @@ header {
       color: #fff;
       width: 45%;
       text-indent: 0px; }
-    .contactus .contact-form .flname input {
+    .contactus .contact-form .flname .first-name, .contactus .contact-form .flname .last-name {
       display: inline-block;
       width: 48%; }
-      .contactus .contact-form .flname input:last-child {
-        float: right; }
+    .contactus .contact-form .flname .last-name {
+      float: right; }
   .contactus .out-details {
     background-color: #cd804c;
     padding: 30px;
@@ -359,7 +359,7 @@ header {
       width: 100%;
       margin: 20px 0px; }
     .contactus .out-details p {
-      font-size: 15px;
+      font-size: 18px;
       font-family: 'quicksand_lightregular'; }
     .contactus .out-details h3 {
       font-family: 'quicksand_mediumregular'; }

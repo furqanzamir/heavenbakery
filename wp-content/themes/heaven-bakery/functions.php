@@ -167,3 +167,41 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function wpb_custom_new_menu() {
+  register_nav_menus(
+    array(
+      'sociallink' => __( 'Social Link' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
+function heaven_address_location() {
+    register_sidebar(
+        array (
+            'name' => __( 'Address Location', 'heavenbakery' ),
+            'id' => 'address-location',
+            'description' => __( 'Address Location', 'heavenbakery' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '',
+            'after_title' => '',
+        )
+         
+    );
+    register_sidebar(
+       array (
+            'name' => __( 'Contact Details', 'heavenbakery' ),
+            'id' => 'contact-details',
+            'description' => __( 'Contact Details', 'heavenbakery' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '',
+            'after_title' => '',
+        )
+         
+    );
+}
+add_action( 'widgets_init', 'heaven_address_location' );
+
+

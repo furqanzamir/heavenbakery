@@ -12,6 +12,20 @@
 ?>
 
 	</div><!-- #content -->
+	<?php if (is_page( array( 'home', 'about-us' ) ) ) { ?>
+		<div class="heaven-bakery-section">
+			<div class="getintouch">
+			  <div class="container">  
+			         <h3>Talk To Us</h3>
+			         <h2>Get in touch for details and inquiry.</h2>
+			         <p>We are quick to respond and always here to help you out.</p>
+			         <a href="#" class="btn btnprim">CONTACT US</a>
+			  </div>
+			</div>
+		</div>
+	<?php }?>
+	
+
 	<footer>
 	<div class="container">
 			<div class="row">
@@ -31,11 +45,14 @@
 						<ul>
 							<li><p><a href="#">Austin, TX, United States, +1 512-491-8456</a></p></li>
 						</ul>
-						<ul>
-							<li><a href="#"> FACEBOOK</a></li>
-							<li><a href="#"> INSTAGRAM</a></li>
-							<li><a href="#"> PINTREST</a></li>
-						</ul>
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'sociallink',
+								'container'       => false,
+								
+							) );
+						  ?>
+						
 					</div>
 				</div>
 			</div>

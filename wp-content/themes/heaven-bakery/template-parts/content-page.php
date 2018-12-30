@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php the_title(); ?>
+		<?php //the_title(); ?>
 
 	<?php heaven_bakery_post_thumbnail(); ?>
 
