@@ -25,7 +25,7 @@
             </div>
             <div class="menutxt">Menu</div>
         </div>
-        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <a href="#" class="custom-logo-link"><img src="images/logo.png"></a>
         <div class="col-lg-6 col-sm-6 mainmenu">
           <div class="heaven-menu">
             <ul>
