@@ -721,7 +721,7 @@ div.rpress_fooditems_list.col-md-5 {
 }
 .fancybox-first {
 	cursor: pointer;
-	height: 511px !important;
+	height: 400px !important;
 	top: 0px;
 	position: absolute;
 	margin: 0px auto;
@@ -737,7 +737,7 @@ div.rpress_fooditems_list.col-md-5 {
 }
 .view-food-item-wrap {
 	cursor: pointer;
-	height: 511px !important;
+	height: 400px !important;
 	top: 0px;
 	position: absolute;
 	margin: 0px auto;
@@ -896,7 +896,7 @@ form#fooditem-update-details h6 {
 }
 .fancybox-can-drag .fancybox-content {
  	cursor: pointer;
-  height: 600px !important;
+  height: 550px !important;
   top: 33px;
   position: absolute;
   margin: 0px auto;

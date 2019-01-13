@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<div class="clearfix"></div>
 	</div><!-- #content -->
 	<?php if (is_page( array( 'home', 'about-us' ) ) ) { ?>
 		<div class="heaven-bakery-section">
@@ -59,7 +59,7 @@
 		</div>
 	</footer>
 
-
+<button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

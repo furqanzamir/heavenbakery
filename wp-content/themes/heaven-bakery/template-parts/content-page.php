@@ -10,6 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php if (is_page('shop')) {
+	  ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/custom-cake-heaven.jpg" class="img-fluid">
+	<?php } ?>
+	<?php if(is_page('checkout')){
+		?>
+		<div class="container">
+	<?php } ?>
 		<?php //the_title(); ?>
 
 	<?php heaven_bakery_post_thumbnail(); ?>
@@ -45,4 +53,8 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+	<?php if(is_page('checkout')){
+		?>
+		</div>
+	<?php } ?>
 </article><!-- #post-<?php the_ID(); ?> -->
