@@ -461,14 +461,14 @@ header{
   }
 }
 .contactus{
-  padding: 60px 0px;
+  
   .contact-form{
     .row{
       margin: 25px 0px;
     }
     background-color: #fff;
     padding: 30px;
-    input{
+    input[type="text"],input[type="email"],input[type="tel"],input[type="date"],select{
       background-color: #f3f4f5;
       border: 0px;
       padding: 8px 2px;
@@ -508,6 +508,14 @@ header{
       }
       .last-name{
         float: right;
+      }
+    }
+    table{
+      width: 100%;
+      tr{
+        td{
+          padding: 10px 0px;
+        }
       }
     }
   }
@@ -698,6 +706,9 @@ ul.rpress-cart span.cart-total{
 /*========== Standard Classes ===========*/
 .padtb30{
   padding: 30px 0px;
+}
+.padtb60{
+  padding: 60px 0px;
 }
 .imgtb60{
   margin: 60px 0px;
