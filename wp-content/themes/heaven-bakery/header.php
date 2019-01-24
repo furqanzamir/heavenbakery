@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
+   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicone.png">
 
 	<?php wp_head(); ?>
 </head>
@@ -27,7 +27,7 @@
 	  <header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-6 col-sm-6 col-10">
             <div class="button_container" id="toggle">
               <span class="top"></span>
               <span class="middle"></span>
@@ -36,12 +36,12 @@
             <div class="menutxt">Menu</div>
         </div>
         <a href="#" class="logo"><?php the_custom_logo(); ?></a>
-        <div class="col-lg-6 col-sm-6 mainmenu">
+        <div class="col-lg-6 col-sm-6 col-2 mainmenu">
           <div class="heaven-menu">
             <ul>
-              <li><a href="#" class="search-wp"><i class="fa fa-search" aria-hidden="true"></i> SEARCH</a></li>
+              <li><a href="#" ><i class="fa fa-search" aria-hidden="true"></i> SEARCH</a></li>
               <li><a href="#">MY ACCOUNT</a></li>
-              <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 0</a></li>
+              <li><a href="<?php echo site_url(); ?>/checkout"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 0</a></li>
             </ul>
           </div>
         </div>

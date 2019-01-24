@@ -387,8 +387,10 @@ header {
     .contactus .out-details h3 {
       font-family: 'quicksand_mediumregular'; }
 
-.search-wp .screen-reader-text {
+.search-wp {
   display: none; }
+  .search-wp .screen-reader-text {
+    display: none; }
 
 .clearfix {
   clear: both; }
@@ -482,6 +484,51 @@ ul.rpress-cart span.cart-total {
 .rpress-popup-actions .submit-fooditem-button {
   color: #fff !important; }
 
+/*====================== Custom Cake ====================*/
+.csutomcake {
+  background-color: #fff;
+  padding: 60px 0px; }
+  .csutomcake .customcakeinfo {
+    background-color: #f6efe9;
+    padding: 20px 30px; }
+    .csutomcake .customcakeinfo h2 {
+      color: #cd804c;
+      font-size: 20px; }
+    .csutomcake .customcakeinfo h3 {
+      color: #000;
+      font-size: 18px; }
+    .csutomcake .customcakeinfo table {
+      width: 100%; }
+      .csutomcake .customcakeinfo table tr {
+        border-bottom: 1px solid #a7a29e; }
+        .csutomcake .customcakeinfo table tr td:last-child {
+          text-align: right; }
+        .csutomcake .customcakeinfo table tr td {
+          padding: 5px 0px; }
+    .csutomcake .customcakeinfo .card {
+      background-color: transparent;
+      border: 0px; }
+      .csutomcake .customcakeinfo .card .card-header {
+        padding: 0px;
+        border: 0px;
+        background-color: transparent; }
+        .csutomcake .customcakeinfo .card .card-header .btn {
+          width: 100%;
+          text-align: left;
+          padding: 0px;
+          font-size: 18px;
+          font-weight: 600;
+          color: #000; }
+          .csutomcake .customcakeinfo .card .card-header .btn i {
+            display: inline-block;
+            text-align: right; }
+      .csutomcake .customcakeinfo .card .card-body {
+        padding: 0px; }
+  .csutomcake [data-toggle="collapse"] .fa:before {
+    content: "\f139"; }
+  .csutomcake [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a"; }
+
 /*========== Standard Classes ===========*/
 .padtb30 {
   padding: 30px 0px; }
@@ -518,5 +565,31 @@ footer {
         margin: 0px; }
         footer .footer-socail-link ul li p a {
           color: #cd804c; }
+
+@media screen and (max-width: 1120px) {
+  .container {
+    min-width: 100%; } }
+@media screen and (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 15px 0px; }
+    header .custom-logo-link img {
+      width: 60px !important;
+      height: auto !important; }
+
+  .button_container {
+    position: relative;
+    height: 20px;
+    width: 25px; }
+    .button_container span:nth-of-type(3) {
+      top: 16px; }
+    .button_container span:nth-of-type(2) {
+      top: 8px; }
+
+  .heaven-menu ul li:nth-child(1), .heaven-menu ul li:nth-child(2) {
+    display: none; }
+
+  footer {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -169,7 +169,7 @@ header{
     }
   }
 }
-
+.heaven-overlay{
 .overlay {
   position: fixed;
   background: #adbfe2;
@@ -266,6 +266,7 @@ header{
         text-decoration: none;
         overflow: hidden;
         font-family: 'quicksand_mediumregular';
+        font-size: $base-fontsize + 26px;
         &:hover:after,
          &:focus:after,
          &:active:after {
@@ -287,6 +288,7 @@ header{
     }
   }
 }
+}
 
 @keyframes fadeInRight {
   0% {
@@ -299,6 +301,29 @@ header{
   }
 }
 
+#toTop {
+  display: none;
+      position: fixed;
+    bottom: 20px;
+    right: 30px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #cd804c;
+    color: white;
+    cursor: pointer;
+    /* padding: 15px; */
+    border-radius: 100%;
+}
+
+#toTop:hover {
+  background-color: #cd804c !important;
+  opacity: 0.8;
+}
 /*=============== Slider ==============*/
 .heaven-slider{
     position: relative;
@@ -307,7 +332,7 @@ header{
         top: 90%;
         left: 50%; 
        transform: translate(-50%, -50%);
-       z-index: 10;
+       z-index: 1;
        color: #fff;
        i{
         font-size: $base-fontsize + 40px;
@@ -351,7 +376,7 @@ header{
         font-family: 'quicksand_mediumregular';
     }
     h2{
-        font-size: $base-fontsize + 22px;
+        font-size: $base-fontsize + 18px;
         color: #000;
         font-family: 'delius_swash_capsregular';
     }
@@ -506,6 +531,116 @@ header{
     }
   }
 }
+.search-wp{
+  display: none;
+  .screen-reader-text{
+    display: none;
+  }
+}
+.clearfix{
+  clear: both;
+}
+/*============= ressort css ==================*/
+.rpress-section{
+  background-color: #fff;
+}
+.rpress-thumbnail-holder img{
+  max-width: 100%;
+}
+.food-item-list {
+    margin-bottom: 8px;
+    display: block;
+    width: 100%;
+}
+#fooditem-details {
+    padding: 00px 25px;
+    h6.rpress-addon-category {
+      margin: 0 0 0.75em;
+      padding: 0.5em 0 0;
+  }
+}
+.rpress_fooditems_list h5.rpress-cat{
+  text-align: center;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+  &:before{
+        content: "\f005";
+    font-size: 16px !important;
+    color: #000;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    padding-right: 15px;
+  }
+  &:after{
+        content: "\f005";
+    font-size: 16px !important;
+    color: #000;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    padding-left: 15px;
+  }
+}
+#rpress_checkout_wrap{
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}
+.rpress-sidebar-cart-wrap{
+  margin-top: 30px;
+}
+.rpress-filter-wrapper,.rpress_fooditems_list,.rpress-sidebar-cart-wrap{
+  padding: 30px 0px;
+}
+#rpress_checkout_form_wrap input[type=email], #rpress_checkout_form_wrap input[type=password], #rpress_checkout_form_wrap input[type=tel], #rpress_checkout_form_wrap input[type=text], #rpress_checkout_form_wrap textarea{
+    background-color: #f3f4f5;
+    border: 0px;
+    padding: 8px 2px;
+    width: 100%;
+    text-indent: 15px;
+    font-size: 18px;
+    font-family: 'quicksandregular';
+  }
+.rpress-sidebar-cart ul.addon-item-wrap, .rpress-sidebar-cart ul.rpress-cart{
+  padding: 5px;
+}
+ul.rpress-category-lists .rpress-category-item{
+  a{
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+.fancybox-container input[type="text"]{
+    width: 100%;
+}
+ul.rpress-cart span.cart-total{
+  color: $prim-color;
+}
+.rpress-cart .rpress_checkout a{
+  background-color: $prim-color;
+}
+.rpress-popup-actions input[type="button"]{
+  border: 0px;
+}
+.rpress-popup-actions .submit-fooditem-button{
+  color: #fff !important;
+}
+/*====================== Custom Cake ====================*/
+.csutomcake{
+  .customcakeinfo{
+    background-color: #f6efe9;
+    padding: 20px 30px;
+  }
+}
 /*========== Standard Classes ===========*/
 .padtb30{
   padding: 30px 0px;
@@ -554,4 +689,45 @@ footer{
             }
         }
     }
+}
+
+
+@media screen and (max-width: 1120px) {
+  .container{
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header{
+    height: auto;
+    padding: 15px 0px;
+    .custom-logo-link{
+      img{
+        width: 60px !important;
+        height: auto !important;
+      }
+    }
+  }
+  
+  .button_container {
+    position: relative;
+    height: 20px;
+    width: 25px;
+    span:nth-of-type(3) {
+      top: 16px;
+    }
+    span:nth-of-type(2) {
+        top: 8px;
+    }
+  }
+  .heaven-menu{
+    ul{
+      li:nth-child(1),li:nth-child(2){
+        display: none;
+      }
+    }
+  }
+  footer{
+    text-align: center;
+  }
 }

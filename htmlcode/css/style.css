@@ -113,7 +113,7 @@ header {
     .button_container span:nth-of-type(3) {
       top: 22px; }
 
-.overlay {
+.heaven-overlay .overlay {
   position: fixed;
   background: #adbfe2;
   top: 0;
@@ -125,45 +125,45 @@ header {
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden; }
-  .overlay .prim-head {
+  .heaven-overlay .overlay .prim-head {
     color: #cd804c;
     font-size: 16px;
     font-family: 'keep_calm_medregular'; }
-  .overlay .prim-subhead {
+  .heaven-overlay .overlay .prim-subhead {
     color: #000;
     font-size: 16px;
     font-family: 'quicksand_mediumregular';
     margin-bottom: 20px; }
-  .overlay .heaven-sociallink ul {
+  .heaven-overlay .overlay .heaven-sociallink ul {
     padding: 0px; }
-    .overlay .heaven-sociallink ul li {
+    .heaven-overlay .overlay .heaven-sociallink ul li {
       list-style: none;
       display: inline-block;
       margin: 0px 15px;
       min-height: 0px;
       height: 0px; }
-      .overlay .heaven-sociallink ul li a {
+      .heaven-overlay .overlay .heaven-sociallink ul li a {
         text-align: center;
         font-size: 15px;
         font-family: 'quicksandbold'; }
-  .overlay .heaven-sociallink p {
+  .heaven-overlay .overlay .heaven-sociallink p {
     text-align: center;
     font-family: 'quicksand_mediumregular';
     font-size: 15px; }
-  .overlay.open {
+  .heaven-overlay .overlay.open {
     opacity: .9;
     visibility: visible;
     height: 100%; }
-    .overlay.open li {
+    .heaven-overlay .overlay.open li {
       animation: fadeInRight .5s ease forwards;
       animation-delay: .35s; }
-      .overlay.open li:nth-of-type(2) {
+      .heaven-overlay .overlay.open li:nth-of-type(2) {
         animation-delay: .4s; }
-      .overlay.open li:nth-of-type(3) {
+      .heaven-overlay .overlay.open li:nth-of-type(3) {
         animation-delay: .45s; }
-      .overlay.open li:nth-of-type(4) {
+      .heaven-overlay .overlay.open li:nth-of-type(4) {
         animation-delay: .50s; }
-  .overlay nav {
+  .heaven-overlay .overlay nav {
     position: relative;
     height: 70%;
     top: 38%;
@@ -171,29 +171,30 @@ header {
     font-size: 45px;
     font-weight: 400;
     text-align: center; }
-  .overlay ul {
+  .heaven-overlay .overlay ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
     display: inline-block;
     position: relative; }
-    .overlay ul li {
+    .heaven-overlay .overlay ul li {
       display: block;
       height: 25%;
       height: calc(100% / 5);
       min-height: 50px;
       position: relative;
       opacity: 0; }
-      .overlay ul li a {
+      .heaven-overlay .overlay ul li a {
         display: block;
         position: relative;
         color: #000;
         text-decoration: none;
         overflow: hidden;
-        font-family: 'quicksand_mediumregular'; }
-        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+        font-family: 'quicksand_mediumregular';
+        font-size: 40px; }
+        .heaven-overlay .overlay ul li a:hover:after, .heaven-overlay .overlay ul li a:focus:after, .heaven-overlay .overlay ul li a:active:after {
           width: 100%; }
-        .overlay ul li a:after {
+        .heaven-overlay .overlay ul li a:after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -211,6 +212,28 @@ header {
   100% {
     opacity: 1;
     left: 0; } }
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #cd804c;
+  color: white;
+  cursor: pointer;
+  /* padding: 15px; */
+  border-radius: 100%; }
+
+#toTop:hover {
+  background-color: #cd804c !important;
+  opacity: 0.8; }
+
 /*=============== Slider ==============*/
 .heaven-slider {
   position: relative; }
@@ -219,7 +242,7 @@ header {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 1;
     color: #fff; }
     .heaven-slider .pagearrow i {
       font-size: 54px; }
@@ -246,7 +269,7 @@ header {
     font-size: 16px;
     font-family: 'quicksand_mediumregular'; }
   .heaven-bakery-section h2 {
-    font-size: 36px;
+    font-size: 32px;
     color: #000;
     font-family: 'delius_swash_capsregular'; }
   .heaven-bakery-section .btnprim {
@@ -364,6 +387,108 @@ header {
     .contactus .out-details h3 {
       font-family: 'quicksand_mediumregular'; }
 
+.search-wp {
+  display: none; }
+  .search-wp .screen-reader-text {
+    display: none; }
+
+.clearfix {
+  clear: both; }
+
+/*============= ressort css ==================*/
+.rpress-section {
+  background-color: #fff; }
+
+.rpress-thumbnail-holder img {
+  max-width: 100%; }
+
+.food-item-list {
+  margin-bottom: 8px;
+  display: block;
+  width: 100%; }
+
+#fooditem-details {
+  padding: 00px 25px; }
+  #fooditem-details h6.rpress-addon-category {
+    margin: 0 0 0.75em;
+    padding: 0.5em 0 0; }
+
+.rpress_fooditems_list h5.rpress-cat {
+  text-align: center;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none; }
+  .rpress_fooditems_list h5.rpress-cat:before {
+    content: "\f005";
+    font-size: 16px !important;
+    color: #000;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    padding-right: 15px; }
+  .rpress_fooditems_list h5.rpress-cat:after {
+    content: "\f005";
+    font-size: 16px !important;
+    color: #000;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    padding-left: 15px; }
+
+#rpress_checkout_wrap {
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px; }
+
+.rpress-sidebar-cart-wrap {
+  margin-top: 30px; }
+
+.rpress-filter-wrapper, .rpress_fooditems_list, .rpress-sidebar-cart-wrap {
+  padding: 30px 0px; }
+
+#rpress_checkout_form_wrap input[type=email], #rpress_checkout_form_wrap input[type=password], #rpress_checkout_form_wrap input[type=tel], #rpress_checkout_form_wrap input[type=text], #rpress_checkout_form_wrap textarea {
+  background-color: #f3f4f5;
+  border: 0px;
+  padding: 8px 2px;
+  width: 100%;
+  text-indent: 15px;
+  font-size: 18px;
+  font-family: 'quicksandregular'; }
+
+.rpress-sidebar-cart ul.addon-item-wrap, .rpress-sidebar-cart ul.rpress-cart {
+  padding: 5px; }
+
+ul.rpress-category-lists .rpress-category-item a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none; }
+
+.fancybox-container input[type="text"] {
+  width: 100%; }
+
+ul.rpress-cart span.cart-total {
+  color: #cd804c; }
+
+.rpress-cart .rpress_checkout a {
+  background-color: #cd804c; }
+
+.rpress-popup-actions input[type="button"] {
+  border: 0px; }
+
+.rpress-popup-actions .submit-fooditem-button {
+  color: #fff !important; }
+
+/*====================== Custom Cake ====================*/
+.csutomcake .customcakeinfo {
+  background-color: #f6efe9;
+  padding: 20px 30px; }
+
 /*========== Standard Classes ===========*/
 .padtb30 {
   padding: 30px 0px; }
@@ -400,5 +525,31 @@ footer {
         margin: 0px; }
         footer .footer-socail-link ul li p a {
           color: #cd804c; }
+
+@media screen and (max-width: 1120px) {
+  .container {
+    min-width: 100%; } }
+@media screen and (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 15px 0px; }
+    header .custom-logo-link img {
+      width: 60px !important;
+      height: auto !important; }
+
+  .button_container {
+    position: relative;
+    height: 20px;
+    width: 25px; }
+    .button_container span:nth-of-type(3) {
+      top: 16px; }
+    .button_container span:nth-of-type(2) {
+      top: 8px; }
+
+  .heaven-menu ul li:nth-child(1), .heaven-menu ul li:nth-child(2) {
+    display: none; }
+
+  footer {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

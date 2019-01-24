@@ -126,6 +126,7 @@ function heaven_bakery_scripts() {
 	wp_enqueue_style( 'owl-theme-default-style', get_template_directory_uri().'/css/owl.theme.default.min.css' );
 	wp_enqueue_style( 'main-style', get_template_directory_uri().'/css/style.css' , array(), '0.1.0', 'all');
 
+	wp_enqueue_script( 'jqurymin', get_template_directory_uri() . '/js/jquery-3.3.1.slim.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'heaven-bakery-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), '20151215', true );

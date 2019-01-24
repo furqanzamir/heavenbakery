@@ -270,14 +270,14 @@ function rpress_ajax_show_product() {
 		$html .= '<div class="rpress-popup-actions edit-rpress-popup-actions">';
 		$html .= '<div class="container">';
 		$html .= '<div class="row row-top">';
-		$html .= '<div class="col-lg-5 col-md-5 btn-count">';
+		$html .= '<div class="col-lg-5 col-md-5 col-5 btn-count">';
 		$html .= '<div class="row">';
-		$html .= '<div class="col-lg-3 col-md-3 col-xs-3 col-sm-2"><input type="button" value="-" class="qtyminus qtyminus-style qtyminus-style-edit" field="quantity"/></div>';
-		$html .= '<div class="col-lg-4 col-md-4 col-xs-4  col-sm-4 md-4-mar-lft"><input type="text" name="quantity" value="1" class="qty qty-style"></div>';
-		$html .= '<div class="col-lg-3 col-md-3 col-sm-2 col-xs-3 plus-symb"><input type="button" value="+" class="qtyplus qtyplus-style qtyplus-style-edit" field="quantity"/></div>';
+		$html .= '<div class="col-lg-3 col-md-3 col-3 col-sm-2"><input type="button" value="-" class="qtyminus qtyminus-style qtyminus-style-edit" field="quantity"/></div>';
+		$html .= '<div class="col-lg-4 col-md-4 col-4  col-sm-4 md-4-mar-lft"><input type="text" name="quantity" value="1" class="qty qty-style"></div>';
+		$html .= '<div class="col-lg-3 col-md-3 col-sm-2 col-3 plus-symb"><input type="button" value="+" class="qtyplus qtyplus-style qtyplus-style-edit" field="quantity"/></div>';
 		$html .='</div>';
 		$html .='</div>';
-		$html .= '<a data-item-qty="1" data-item-id="'.$food_item_id.'" data-item-price="'.$price.'" class="center submit-fooditem-button text-center inline col-lg-6 col-md-6">Add To Cart</a>';
+		$html .= '<a data-item-qty="1" data-item-id="'.$food_item_id.'" data-item-price="'.$price.'" class="center submit-fooditem-button text-center inline col-lg-6 col-md-6 col-6">Add To Cart</a>';
 		$html .='</div>';
 		
 		$html .= '</div>';

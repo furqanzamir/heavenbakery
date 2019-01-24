@@ -970,7 +970,6 @@ form#fooditem-update-details h6 {
   	margin-bottom: 20px;
   }
   div.rpress-filter-wrapper {
-  	display: none;
     padding: 0 15px;
   }
   div.rpress-filter-wrapper.active {
@@ -1004,10 +1003,10 @@ form#fooditem-update-details h6 {
 		font-size: 15px;
 	}
 	.fancybox-can-drag .fancybox-content {
-		left: 11%;
+		left: 0%;
 	}
 	.rpress-popup-actions.edit-rpress-popup-actions {
-		left: 11%;
+		left: 0%;
 	}
 	div.btn-count {
 		width: 60%;
@@ -1152,12 +1151,12 @@ form#fooditem-update-details h6 {
 @media only screen and (max-width: 625px) {
 	.fancybox-can-drag .fancybox-content, 
   .rpress-popup-actions.edit-rpress-popup-actions {
-  	width: 540px !important;
-    left: 7%;
+  	width: 100% !important;
+    left: 0%;
   }
   .sticky-cat {
   	top: -15px !important;
-	  margin-left: -51px !important;
+	  margin-left: 0px !important;
   }
 }
 @media only screen and (max-width: 768px) {
