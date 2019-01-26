@@ -571,6 +571,22 @@ footer {
         footer .footer-socail-link ul li p a {
           color: #cd804c; }
 
+input.hideradio {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */ }
+
+.imgradio label > input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent; }
+
+.imgradio label > input:checked + img {
+  /* (RADIO CHECKED) IMAGE STYLES */
+  border: 2px solid #f00; }
+
 @media screen and (max-width: 1120px) {
   .container {
     min-width: 100%; } }

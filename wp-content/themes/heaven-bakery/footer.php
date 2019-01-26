@@ -59,7 +59,7 @@
 		</div>
 	</footer>
 
-<button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+<button  id="back-to-top" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
