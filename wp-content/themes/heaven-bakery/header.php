@@ -40,7 +40,7 @@
           <div class="heaven-menu">
             <ul>
               <li><a href="#" data-toggle="modal" data-target="#searchheavenbak"><i class="fa fa-search" aria-hidden="true"></i> SEARCH</a></li>
-              <li><a href="#">MY ACCOUNT</a></li>
+              <li><a href="<?php echo site_url(); ?>/checkout">MY ACCOUNT</a></li>
               <li><a href="<?php echo site_url(); ?>/checkout"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 0</a></li>
             </ul>
           </div>
