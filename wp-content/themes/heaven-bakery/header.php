@@ -39,7 +39,7 @@
         <div class="col-lg-6 col-sm-6 col-2 mainmenu">
           <div class="heaven-menu">
             <ul>
-              <li><a href="#" ><i class="fa fa-search" aria-hidden="true"></i> SEARCH</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#searchheavenbak"><i class="fa fa-search" aria-hidden="true"></i> SEARCH</a></li>
               <li><a href="#">MY ACCOUNT</a></li>
               <li><a href="<?php echo site_url(); ?>/checkout"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 0</a></li>
             </ul>
@@ -48,9 +48,33 @@
       </div>
     </div>
   </header>
-  <div class="search-wp">
-    <?php get_search_form(); ?>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="searchheavenbak" tabindex="-1" role="dialog" aria-labelledby="searchheavenbakTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Heaven Bakery Search</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="search-wp">
+         <div class="contactus">
+            <div class="contact-form pad0">
+              <?php get_search_form(); ?>
+            </div> 
+         </div>           
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+  
   <div class="heaven-overlay">
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
