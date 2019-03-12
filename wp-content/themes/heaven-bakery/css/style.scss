@@ -73,16 +73,16 @@ $color-background: #F5F5F5;
 $color-main: #000000;
 $color-active: #FFF;
 $color-link: #FFF;
-$button-height: 27px;
-$button-width: 35px;
+$button-height: 22px;
+$button-width: 24px;
 $base-fontweght: 300;
 $base-fontsize: 14px;
 $prim-color: #cd804c;
 header{
     position: relative;
-    height: 150px;
+    height: 120px;
     background-color: #fff;
-    padding: 30px 0px;
+    padding: 44px 0px;
     color: #000;
     .menutxt {
             display: inline-block;
@@ -97,6 +97,10 @@ header{
         top: 50%;
         left: 50%; 
        transform: translate(-50%, -50%);
+       .custom-logo{
+        width: 110px;
+        height: auto;
+       }
     } 
     .mainmenu{
         float: right;        
@@ -135,17 +139,17 @@ header{
   
   &.active {
     .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
-      background: $color-active;
+      transform: translateY(10px) translateX(0) rotate(45deg);
+      background: $color-main;
     }
     .middle {
       opacity: 0;
-      background: $color-active;
+      background: $color-main;
     }
     
     .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: $color-active;
+      transform: translateY(-8px) translateX(0) rotate(-45deg);
+      background: $color-main;
     }
   }
   
@@ -161,11 +165,11 @@ header{
   cursor: pointer;
     
     &:nth-of-type(2) {
-      top: 11px;
+      top: 9px;
     }
     
     &:nth-of-type(3) {
-      top: 22px;
+      top: 18px;
     }
   }
 }
@@ -234,11 +238,11 @@ header{
         animation-delay: .50s;
       }
     }
-  }
+  }  
   nav {
     position: relative;
     height: 70%;
-    top: 38%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 45px;
     font-weight: 400;
@@ -254,7 +258,7 @@ header{
     li {
       display: block;
       height: 25%;
-      height: calc(100% / 5);
+      height: calc(100% / 4);
       min-height: 50px;
       position: relative;
       opacity: 0;
@@ -327,6 +331,11 @@ header{
 /*=============== Slider ==============*/
 .heaven-slider{
     position: relative;
+    .homelsider-hb{
+      background-size: cover;
+      height: 70vh;
+      background-position: center center;
+    }
     .pagearrow{
         position: absolute;
         top: 90%;

@@ -49,9 +49,9 @@ body {
 /*========== Home Page Manu ==============*/
 header {
   position: relative;
-  height: 150px;
+  height: 120px;
   background-color: #fff;
-  padding: 30px 0px;
+  padding: 44px 0px;
   color: #000; }
   header .menutxt {
     display: inline-block;
@@ -65,6 +65,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    header .custom-logo-link .custom-logo {
+      width: 110px;
+      height: auto; }
   header .mainmenu {
     float: right; }
   header .heaven-menu ul {
@@ -81,8 +84,8 @@ header {
 
 .button_container {
   position: relative;
-  height: 27px;
-  width: 35px;
+  height: 22px;
+  width: 24px;
   cursor: pointer;
   display: inline-block;
   z-index: 100;
@@ -90,14 +93,14 @@ header {
   .button_container:hover {
     opacity: .7; }
   .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF; }
+    transform: translateY(10px) translateX(0) rotate(45deg);
+    background: #000000; }
   .button_container.active .middle {
     opacity: 0;
-    background: #FFF; }
+    background: #000000; }
   .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF; }
+    transform: translateY(-8px) translateX(0) rotate(-45deg);
+    background: #000000; }
   .button_container span {
     background: #000000;
     border: none;
@@ -109,9 +112,9 @@ header {
     transition: all .35s ease;
     cursor: pointer; }
     .button_container span:nth-of-type(2) {
-      top: 11px; }
+      top: 9px; }
     .button_container span:nth-of-type(3) {
-      top: 22px; }
+      top: 18px; }
 
 .heaven-overlay .overlay {
   position: fixed;
@@ -166,7 +169,7 @@ header {
   .heaven-overlay .overlay nav {
     position: relative;
     height: 70%;
-    top: 38%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 45px;
     font-weight: 400;
@@ -180,7 +183,7 @@ header {
     .heaven-overlay .overlay ul li {
       display: block;
       height: 25%;
-      height: calc(100% / 5);
+      height: calc(100% / 4);
       min-height: 50px;
       position: relative;
       opacity: 0; }
@@ -237,6 +240,10 @@ header {
 /*=============== Slider ==============*/
 .heaven-slider {
   position: relative; }
+  .heaven-slider .homelsider-hb {
+    background-size: cover;
+    height: 70vh;
+    background-position: center center; }
   .heaven-slider .pagearrow {
     position: absolute;
     top: 90%;

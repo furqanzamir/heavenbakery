@@ -119,7 +119,7 @@
             // loop through the rows of data
               while ( have_rows('home_slider') ) : the_row(); ?>
                 <div class="item">
-                  <img src="<?php echo the_sub_field('hero_banner_slider'); ?>" class="img-fluid">
+                  <div class="homelsider-hb img-fluid" style="background-image: url('<?php echo the_sub_field('hero_banner_slider'); ?>');"></div>
                 </div>
               <?php 
                   // display a sub field value
